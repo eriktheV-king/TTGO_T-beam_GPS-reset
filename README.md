@@ -24,7 +24,7 @@ where you can download the necessary SparkFun library.
 
 ## PlatformIO usage
 
-1. On Linux, there is a symlink from `src` to `T22-GPS-reset-v3` directory. It shall work as is.
-  If you are on Windows, you may want to remove that symlink and rename `T22-GPS-reset-v3` directory to `src`.
+1. For PlatformIO, we default to `T22-GPS-reset-v3` version.
+   You'll want to give it an environment variable named `PLATFORMIO_SRC_DIR=variant_name` to build different version.
 2. Run `pio run -t upload` to upload.
 3. Run `pio device monitor` to watch the logs. Enjoy.
