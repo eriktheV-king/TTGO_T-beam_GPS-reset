@@ -21,3 +21,10 @@ so that NMEA 9600 over the GPS serial output is enabled.
 Based on SparkFun's Ublox Arduino Library and examples
 https://github.com/sparkfun/SparkFun_Ublox_Arduino_Library
 where you can download the necessary SparkFun library.
+
+## PlatformIO usage
+
+1. On Linux, there is a symlink from `src` to `T22-GPS-reset-v3` directory. It shall work as is.
+  If you are on Windows, you may want to remove that symlink and rename `T22-GPS-reset-v3` directory to `src`.
+2. Run `pio run -t upload` to upload.
+3. Run `pio device monitor` to watch the logs. Enjoy.
